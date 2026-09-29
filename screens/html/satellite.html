@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Angaar - Satellite evidence check</title>
+<link rel="stylesheet" href="base.css">
+<style>
+html,body{font-size:15px}
+.app{width:1280px;height:820px;grid-template-columns:184px 1fr;grid-template-rows:52px 1fr}
+.side a{font-size:14.5px;padding:8px 11px}
+.main{padding:16px 20px}
+h1{font-size:21px}
+.wrap{display:grid;grid-template-columns:560px 1fr;gap:18px;margin-top:12px}
+.map{position:relative;width:560px;height:560px;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.map img{width:560px;height:560px;display:block}
+.scale{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.92);border-radius:4px;padding:6px 9px;font-size:12.5px;color:var(--ink)}
+.scale i{display:block;width:70px;height:6px;border:2px solid var(--ink);border-top:0;margin-top:3px}
+.north{position:absolute;right:14px;top:14px;background:rgba(255,255,255,.92);border-radius:4px;padding:4px 9px;font-weight:700;font-size:13px}
+.legend{position:absolute;right:14px;bottom:14px;background:rgba(255,255,255,.92);border-radius:4px;padding:7px 10px;font-size:12.5px;line-height:1.5}
+.sw{display:inline-block;width:12px;height:12px;vertical-align:-2px;margin-right:6px;border-radius:2px}
+.cap{font-size:12.5px;color:var(--muted);margin-top:6px}
+.res{display:grid;gap:10px}
+.line{display:grid;grid-template-columns:190px 1fr;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid #EEF1F4}
+.line span{color:var(--muted);font-size:13.5px}
+.line b{font-size:17px;font-weight:600}
+.verdict{background:var(--amber-bg);border-radius:8px;padding:12px 14px}
+.verdict b{color:var(--amber);font-size:18px}
+.thumbs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
+.thumbs img{width:100%;border-radius:6px;border:1px solid var(--line);display:block}
+.thumbs div{font-size:13px;color:var(--muted);margin-top:4px}
+.thumbs b{color:var(--ink)}
+.method{font-size:13px;color:var(--muted);line-height:1.45}
+</style></head>
+<body>
+<div class="app">
+  <div class="top">
+    <div class="brand"><b>Angaar</b><span>अंगार</span></div>
+    <div class="crumb">JH-OC-07 &nbsp;›&nbsp; Evidence checks &nbsp;›&nbsp; <strong>Reclamation, east OB dump</strong></div>
+    <div class="right"><span class="pill">EN | हिं</span><span>Environment Officer</span></div>
+  </div>
+  <div class="side">
+    <div class="grp">Mine</div>
+    <a>Today</a>
+    <a>Declared vs verified</a>
+    <a>Actions</a>
+    <a>Inspections</a>
+    <a>Returns</a>
+    <div class="grp">Records</div>
+    <a class="on">Evidence checks</a>
+    <a>Contract workers</a>
+    <a>Village report card</a>
+    <a>Audit log</a>
+    <div class="seal">Daily log sealed<br><b>29 Sep 2026, 23:59</b></div>
+  </div>
+  <div class="main">
+    <div style="display:flex;align-items:baseline;gap:12px">
+      <h1>Satellite check: biological reclamation on the east OB dump</h1>
+    </div>
+    <div class="sub" style="margin-top:3px">Star Rating item 18 and EC plantation condition &nbsp;·&nbsp; dump centre 23.758 N, 86.417 E, Jharia coalfield</div>
+    <div class="wrap">
+      <div>
+        <div class="map">
+          <img src="img/sat_2026_full.png" alt="Sentinel-2 true colour image, 2 March 2026">
+          <div class="north">N ↑</div>
+          <div class="scale">500 m<i></i></div>
+          <div class="legend"><span class="sw" style="background:#fff;border:1px dashed #555"></span>Area declared as reclaimed<br><span class="sw" style="background:#C55A11"></span>Declared, but not green (NDVI below 0.30)</div>
+        </div>
+        <div class="cap">Sentinel-2 L2A, 2 Mar 2026, 10 m pixels, cloud cover 0.0007%. Mine code and declared figure are demo data.</div>
+      </div>
+      <div class="res">
+        <div class="line"><span>Mine declared, FY 2025-26</span><b class="num">12.0 ha reclaimed on this dump</b></div>
+        <div class="line"><span>Satellite, 2 Mar 2026</span><b class="num">0.3 ha green out of 39.3 ha</b></div>
+        <div class="line"><span>Same day last year</span><b class="num">0.2 ha green</b></div>
+        <div class="verdict"><b>Mismatch: 11.7 ha not visible as vegetation</b><div style="margin-top:4px;font-size:14px">Review action A-2318 opened for the Environment Officer, due 15 Oct 2026. The next check runs on the first clear image after the monsoon.</div></div>
+        <div class="thumbs">
+          <div><img src="img/sat_2025_zoom.png" alt="2 March 2025"><div><b>2 Mar 2025</b> &nbsp;0.2 ha green</div></div>
+          <div><img src="img/sat_2026_zoom.png" alt="2 March 2026"><div><b>2 Mar 2026</b> &nbsp;0.3 ha green</div></div>
+        </div>
+        <div class="method">How it is measured: NDVI from Sentinel-2 bands B4 and B8. A pixel counts as green when NDVI is 0.30 or more, which is the median of natural vegetation 3 km west in the same image.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

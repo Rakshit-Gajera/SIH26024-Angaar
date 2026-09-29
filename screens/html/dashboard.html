@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Angaar - Declared vs verified</title>
+<link rel="stylesheet" href="base.css">
+<style>
+html,body{font-size:15px}
+.app{width:1280px;height:820px;grid-template-columns:184px 1fr;grid-template-rows:52px 1fr}
+.side a{font-size:14.5px;padding:8px 11px}
+.main{padding:16px 20px}
+h1{font-size:21px}
+.row1{display:grid;grid-template-columns:1.6fr .72fr .8fr;gap:12px;margin:12px 0}
+.bars{margin-top:10px;display:grid;gap:9px}
+.bar{display:grid;grid-template-columns:78px 1fr 54px;align-items:center;gap:10px;font-size:15px}
+.track{height:16px;background:#EEF1F4;border-radius:3px;overflow:hidden}
+.fill{height:100%}
+.big{font-size:40px;font-weight:600;line-height:1.05}
+.gapline{margin-top:9px;display:flex;gap:10px;align-items:baseline}
+.gapline .g{font-size:26px;font-weight:700;color:var(--amber)}
+.grid2{display:grid;grid-template-columns:1.45fr 1fr;gap:12px;margin-top:12px}
+ul.clean{list-style:none}
+ul.clean li{padding:5px 0;border-bottom:1px solid #EEF1F4;font-size:14px;display:flex;gap:8px;align-items:baseline}
+ul.clean li:last-child{border-bottom:0}
+.kv{display:grid;grid-template-columns:1fr auto;row-gap:5px;font-size:14px}
+.kv b{font-weight:600}
+td{font-size:14.5px;padding:8px 9px}
+td .s{font-size:12.5px}
+th{font-size:12.5px;padding:7px 9px}
+td.diff{font-weight:700;color:var(--amber);white-space:nowrap}
+.box{padding:12px 14px}
+h2{font-size:16px;margin-bottom:6px}
+</style></head>
+<body>
+<div class="app">
+  <div class="top">
+    <div class="brand"><b>Angaar</b><span>अंगार</span></div>
+    <div class="crumb">BCCL &nbsp;›&nbsp; Area (demo) &nbsp;›&nbsp; <strong>JH-OC-07</strong></div>
+    <div class="right"><span>September 2026</span><span class="pill">EN | हिं</span><span>Area Safety Officer</span></div>
+  </div>
+  <div class="side">
+    <div class="grp">Mine</div>
+    <a>Today</a>
+    <a class="on">Declared vs verified</a>
+    <a>Actions</a>
+    <a>Inspections</a>
+    <a>Returns</a>
+    <div class="grp">Records</div>
+    <a>Evidence checks</a>
+    <a>Contract workers</a>
+    <a>Village report card</a>
+    <a>Audit log</a>
+    <div class="seal">Daily log sealed<br><b>29 Sep 2026, 23:59</b></div>
+  </div>
+  <div class="main">
+    <div style="display:flex;align-items:baseline;gap:12px">
+      <h1>JH-OC-07 &nbsp;·&nbsp; Opencast &nbsp;·&nbsp; Jharia coalfield, Dhanbad</h1>
+      <span class="pill">Demo data</span>
+    </div>
+    <div class="row1">
+      <div class="box">
+        <h2>Compliance this month</h2>
+        <div class="sub" style="font-size:13.5px">26 items have a record that the mine does not write</div>
+        <div class="bars">
+          <div class="bar"><span>Declared</span><div class="track"><div class="fill" style="width:92%;background:#9AA3AE"></div></div><b class="num">92%</b></div>
+          <div class="bar"><span>Verified</span><div class="track"><div class="fill" style="width:69%;background:var(--navy)"></div></div><b class="num navy">69%</b></div>
+        </div>
+        <div class="gapline"><span class="g num">23 points</span><span class="sub" style="font-size:13.5px">gap between declared and verified</span></div>
+        <div style="margin-top:7px"><span class="tag ok">18 verified</span>&nbsp; <span class="tag mis">5 mismatch</span>&nbsp; <span class="tag wait">3 waiting for data</span></div>
+      </div>
+      <div class="box tint">
+        <h2>Open actions</h2>
+        <div class="big num">14</div>
+        <div class="amber" style="font-weight:600;margin-top:4px">4 overdue</div>
+        <div class="sub" style="margin-top:6px;font-size:13px">Oldest: dust sprinkling on haul road 2, 9 days late</div>
+      </div>
+      <div class="box">
+        <h2>Area inspection list</h2>
+        <div class="big num">3<span style="font-size:20px"> of 11</span></div>
+        <div class="sub" style="margin-top:6px;font-size:13px">Ordered by the gap, overdue actions and repeat findings</div>
+      </div>
+    </div>
+    <div class="box" style="padding:8px 10px 2px">
+      <h2 style="margin:4px 4px 4px">Mismatches this month</h2>
+      <table>
+        <thead><tr><th style="width:27%">Item</th><th style="width:16%">Mine declared</th><th style="width:28%">Independent record</th><th style="width:11%">Difference</th><th>Owner, due</th></tr></thead>
+        <tbody>
+          <tr><td>Reclamation, east OB dump<span class="s">Star Rating item 18, EC condition</span></td><td class="num">12.0 ha</td><td>Sentinel-2, 2 Mar 2026: 0.3 ha green<span class="s">NDVI on the declared dump</span></td><td class="diff num">11.7 ha</td><td>Env. Officer<span class="s">15 Oct</span></td></tr>
+          <tr><td>Contract wages, August<span class="s">CLIP wage upload</span></td><td class="num">1,146 paid</td><td>37 WINs paid with 0 check-ins<span class="s">matched worker by worker</span></td><td class="diff num">37 workers</td><td>Contractor cell<span class="s">10 Oct</span></td></tr>
+          <tr><td>PM10 at village receptor<span class="s">EC air quality condition</span></td><td>Within limit</td><td>CPCB CAAQMS: over 100 µg/m³ on 9 days<span class="s">24-hour averages, August</span></td><td class="diff num">9 days</td><td>Env. Officer<span class="s">7 Oct</span></td></tr>
+          <tr><td>Despatch, August<span class="s">monthly return</span></td><td class="num">4.12 lakh t</td><td>Rakes and weighbridge: 3.87 lakh t<span class="s">railway loading, road weighbridge</span></td><td class="diff num">-6.1%</td><td>Despatch<span class="s">12 Oct</span></td></tr>
+          <tr><td>Orders under Section 22<span class="s">Star Rating item 40</span></td><td>Nil</td><td>DGMS record: 1 order, 12 Jun 2026</td><td class="diff num">1 order</td><td>Manager<span class="s">5 Oct</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid2">
+      <div class="box">
+        <h2>Verified this month (18)</h2>
+        <ul class="clean">
+          <li><span class="tag ok">OK</span>Fatal accidents FY 2025-26: declared 0, DGMS record 0</li>
+          <li><span class="tag ok">OK</span>Six-monthly EC report on PARIVESH: filed 29 May, due 1 June</li>
+        </ul>
+      </div>
+      <div class="box tint">
+        <h2>Field evidence this week</h2>
+        <div class="kv num">
+          <span>Records from the field app</span><b>214</b>
+          <span>Photos rejected as reused</span><b class="amber">6</b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,54 @@
+# AI-Based Smart Governance and Compliance Monitoring System for Coal Mines
+
+> Our solution to this problem statement is **Angaar (अंगार)** by team Computer Smashers (Team ID 178955). See the [README](../README.md).
+
+| Field | Details |
+| :--- | :--- |
+| **Problem Statement ID** | SIH26024 |
+| **Title** | AI-Based Smart Governance and Compliance Monitoring System for Coal Mines |
+| **Problem Creater's Name** | Sarim Moin |
+| **Problem Creater's Organization** | Ministry of Coal |
+| **Problem Creater's Department** | Ministry of Education's Innovation Cell (MIC) |
+| **Technology Bucket** | Smart Automation |
+| **Category** | Software |
+| **Problem Statement Type** | *(Not specified)* |
+| **Idea Count** | 95 / 500 |
+| **Youtube Link** | *(None)* |
+
+---
+
+## Description
+
+### Background
+The Indian coal mining sector involves large-scale operations spread across multiple subsidiaries, mine sites, contractors, regulatory bodies, and field offices. Governance-related activities such as statutory compliance monitoring, inspection tracking, safety observations, production reporting, environmental monitoring, worker attendance, contract management, grievance handling, and regulatory reporting are often managed through fragmented systems, manual documentation, spreadsheets, and delayed reporting mechanisms. This leads to challenges such as data inconsistency, delayed decision-making, limited transparency, compliance gaps, duplication of records, weak monitoring of field-level activities, and difficulty in obtaining real-time operational insights. With increasing focus on transparency, accountability, sustainability, and digital governance, there is a need for an integrated smart governance platform specifically designed for the coal mining ecosystem.
+
+### Defining the Problem
+Develop a centralized AI-enabled governance and compliance monitoring platform for coal mining operations that can digitally integrate mine-level activities, statutory compliance, inspections, contractor management, and operational reporting.
+
+### The Proposed Solution Should:
+- Digitally track statutory compliance requirements related to safety, environment, production, and labour regulations.
+- Enable real-time monitoring of inspections, observations, violations, and corrective actions.
+- Use AI/analytics to identify high-risk areas, recurring compliance failures, and operational anomalies.
+- Provide geo-tagged and time-stamped field reporting through mobile applications.
+- Integrate dashboards for mine officials, corporate management, and regulatory authorities.
+- Generate automated alerts, reminders, compliance reports, and escalation mechanisms.
+- Minimize manual paperwork and improve transparency, accountability, and decision-making.
+- Be scalable for deployment across multiple mines and subsidiaries.
+- Participants may use AI/ML, mobile applications, GIS mapping, OCR/document digitization, workflow automation, blockchain-based audit trails, or multilingual conversational interfaces as part of the solution.
+
+### The Proposed System is Expected To:
+- Improve governance efficiency and transparency in coal mining operations.
+- Reduce delays and errors in compliance management and reporting.
+- Enable data-driven monitoring and faster administrative decision-making.
+- Strengthen accountability and real-time tracking of field activities.
+- Support digital transformation and paperless governance in the mining sector.
+- Create a scalable indigenous e-governance framework for Indian coal mines.
+
+### Expected Solution Breakdown:
+The proposed solution should be a centralized AI-enabled smart governance platform for coal mines that integrates compliance monitoring, inspection management, operational reporting, contractor management, and field activity tracking into a single digital ecosystem. The system should provide real-time visibility, automated workflows, and data-driven insights through web and mobile applications to improve transparency, accountability, and decision-making across multiple mining sites and subsidiaries.
+
+- **Centralized dashboard:** For mine officials, corporate management, and regulatory authorities with real-time compliance and operational monitoring.
+- **AI/analytics engine:** To detect compliance risks, operational anomalies, recurring violations, and generate predictive alerts.
+- **Geo-tagged mobile application:** For field inspections, safety observations, attendance, and incident reporting with offline support.
+- **Automated workflow system:** For alerts, reminders, escalations, digital approvals, and statutory report generation.
+- **Digital governance tools:** GIS mapping, OCR-based document digitization, and secure digital audit trails for transparent and paperless governance.
